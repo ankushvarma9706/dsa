@@ -1,0 +1,17 @@
+Queue
+-----------------
+1. Queue is a linear Data Structure .
+2. Queue follows FIFO [First-In-First-Out]  .
+Operation :
+           |- Enqueue : Insert an element into the Queue .
+           |- Dequeue : Delete an element into the Queue .
+
+4. All operation perform from two end point .
+
+       |- FRONT : Delete an element From  the Font end.
+       |- REAR :  Insert an element From  the REAR end.
+
+5. Condition :
+             1. FRONT = REAR == -1,  Queue is empty .
+             2. FRONT == REAR, Single element .
+             3. REAR == SIZE-1  Queue is Full .

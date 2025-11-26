@@ -1,0 +1,27 @@
+7. Stack class
+    1.a. Stack class is stored in java.util package .
+      A. Stack class is the child class of vector class.
+      B. Stack class is a synchronized class .
+      C. Stack class also work from the basis of indexing .
+      D. Stack class is a Generic class .
+      E. This Generic class is use only Wrapper classes .
+
+
+      Wrapper classes
+      -------------------
+      Data type                     Wrapper classes
+      -----------------------------------------------
+      byte                             Byte
+      short                            Short
+      int                              Integer
+      long                             Long
+      float                            Float
+      double                           Double
+      char                             Character
+      boolean                          Boolean
+
+
+
+8. Example :
+     Program2
+     Program3 : Reverse a given string using Stack .

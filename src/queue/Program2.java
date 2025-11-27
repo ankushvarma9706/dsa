@@ -1,26 +1,26 @@
 package queue;
 
-public class Program1
+public class Program2
 {
     int[] queue;
     int size;
     int front, rear;
 
-    Program1(int size)
+    Program2(int size)
     {
         queue = new int[size];
-       this.size = size;
+        this.size = size;
         front = rear = -1;
     }
 
     void enqueue(int data) {
-        if (rear == size - 1) {
+        if (front == 0 && rear == size - 1 || front == rear+1) {
             System.out.println("Queue is full ");
         } else {
             if (rear == -1) {
                 front = 0;
             }
-            rear++;
+            rear = (rear+1)%size;
             queue[rear] = data;
         }
     }
@@ -32,23 +32,22 @@ public class Program1
             if (front == rear) {
                 front = rear = -1;
             } else {
-                front++;
+                front = (front+1)%size;
             }
         }
     }
 
     void printQueue() {
-        for (int i = front; i <= rear; i++)
+        int i = 0 ;
+        for ( i = front; i != rear; i = (i+1)%size)
         {
-        System.out.print(queue[i] + "\t");
-    }
-            System.out.println();
+            System.out.print(queue[i] + "\t");
         }
-
-
+        System.out.println(queue[i]);
+    }
     public static void main(String[] args)
     {
-        Program1 p1 = new Program1(5);
+        Program2 p1 = new Program2(5);
         p1.enqueue(10);
         p1.enqueue(20);
         p1.enqueue(30);
@@ -56,8 +55,10 @@ public class Program1
         p1.enqueue(50);
         p1.printQueue();
         p1.deQueue();
+        p1.deQueue();
+        p1.printQueue();
+        p1.enqueue(60);
+        p1.enqueue(70);
         p1.printQueue();
     }
 }
-
-

@@ -15,3 +15,55 @@ Operation :
              1. FRONT = REAR == -1,  Queue is empty .
              2. FRONT == REAR, Single element .
              3. REAR == SIZE-1  Queue is Full .
+
+===================================================================================
+
+
+
+
+Circular Queue
+-----------------
+1. Circular Queue is a linear Data Structure .
+2. Circular Queue follows FIFO [First-In-First-Out]  .
+Operation :
+           |- Enqueue : Insert an element into the Queue .
+           |- Dequeue : Delete an element into the Queue .
+
+4. All operation perform from two end point .
+
+       |- FRONT : Delete an element From  the Font end.  [Front = (Front+1)%Size]
+       |- REAR :  Insert an element From  the REAR end.  [Rear =  (Front+1)%Size]
+
+5. Condition :
+             1. FRONT =  REAR == -1,  Circular Queue is empty .
+             2. FRONT == REAR,        Single element in the Circular Queue .
+             3. REAR  == SIZE-1,      Circular Queue is Full .
+                                         &&
+             4. Front = Rear+1,       Circular Queue is Full .
+             5. [Rear = (Resr+1)%Size]
+             6. [Front = (Front+1)%Size]
+
+================================================================================================
+
+
+
+
+
+Deque [also known as double ended Queue ]
+----------------------------------------------
+1. Deque works on both ends
+                    |- We can enqueue and dequeue from front end rear
+2. We are using ArrayDeque class for these operations
+3. ArrayDeque is a generic class
+4. Method :
+      1. addFirst
+      2. addLast
+      3. offerFirst
+      4. offerLast
+      4. removeFirst
+      5. Remove last
+      6. get first
+      7. getLast
+      8. poll()
+      9. pollFirst()
+      10.pollLast()

@@ -1,0 +1,16 @@
+LinkedList (Single LL)
+-----------------------
+1. LinkedList is similar to an Array .
+2. LL elements access in linearly .
+3. LL elements are not stored in contigious memory allocation (non-linear way)
+4. Each element of LL is called a Node .
+5. Each Node of LL contains :
+                    |- Data - It holds the value of Node .
+                    |- Next - it holds the address/reference of Node
+6. Last Node of LL contains NULL in the next part of the node .
+7. Last Node is aka TAIL node .
+8. Starting Node of LL is called HEAD node .
+9. IF the value of Head node equal to the NULL then we can say that , LL is empty .
+Example :
+  Program1
+
